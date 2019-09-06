@@ -455,7 +455,7 @@ if test "x$java_prefix" != "x"; then JAVA_HOME="$java_prefix"; fi
 if test "x$JAVA_HOME" != "x"; then PATH=$JAVA_HOME/bin:$PATH; fi
 if test $has_java -eq 1; then searchbin "java"; has_java=$?; java="$path"; fi
 if test $has_java -eq 1; then searchbin "javac"; has_java=$?; javac="$path"; fi
-if test $has_java -eq 1; then searchbin "javah"; has_java=$?; javah="$path"; fi
+#if test $has_java -eq 1; then searchbin "javah"; has_java=$?; javah="$path"; fi
 if test $has_java -eq 1; then searchbin "javadoc"; has_java=$?; javadoc="$path"; fi
 if test $has_java -eq 1; then searchbin "jar"; has_java=$?; jar="$path"; fi
 

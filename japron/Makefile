@@ -120,7 +120,7 @@ libjgmp.$(EXT_DLL): gmp/jgmp.o $(GMPO)
 	$(CC) $(CFLAGSN) -shared $+ -o $@ $(LFLAGS) $(GMPLIBS)
 
 gmp/gmp_%.h: gmp/%.java
-	$(JAVAH) -o $@ gmp.$* 
+	$(JAVAC) -h gmp gmp/$*.java
 	touch $@
 
 gmp.jar: $(GMPCLASS)
@@ -138,7 +138,7 @@ libjapron.$(EXT_DLL): apron/japron.o $(APRONO)
 	$(CC) $(CFLAGSN) -shared $+ -o $@ $(LFLAGS) $(APRONLIBS)
 
 apron/apron_%.h: apron/%.java
-	$(JAVAH) -o $@ apron.$* 
+	$(JAVAC) -h apron apron/$*.java
 	touch $@
 
 apron.jar: $(APRONCLASS)

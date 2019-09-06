@@ -51,7 +51,7 @@ Compiling the PPL-based domains requires the [Parma Polyhedra Library](http://bu
 
 Additional language wrappers require additional components:
 * a C++ compiler for the C++ API
-* a JDK >= 1.6 for the Java API
+* a JDK >= 1.8 for the Java API
 * for the OCaml API:
   * a recent OCaml compiler (tested with 4.07, but earlier 4.x should also work)
   * ocamlfind
